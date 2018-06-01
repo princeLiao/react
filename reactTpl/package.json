@@ -72,18 +72,5 @@
     "rc-form": "^1.4.7",
     "react-document-title": "^2.0.3",
     "webpack-md5-hash": "^0.0.5"
-  },
-  "deploy": {
-    "url": "https://static1.weidai.com.cn/static/fed/recruit.onLine",
-    "cdn": "",
-    "cdnDir": "fed/recruit.onLine",
-    "dingding": "",
-    "fat": {
-      "url": "http://onLine.fat.weidai.work/"
-    },
-    "uat": {
-      "url": "https://static1.wdai.com/static/fed/recruit.onLine"
-    },
-    "prd": {}
   }
 }
