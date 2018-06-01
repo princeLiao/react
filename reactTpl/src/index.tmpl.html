@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="wap-font-scale" content="no">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script type="text/javascript">
+        document.documentElement.style.fontSize = 100 + 'px';
+    </script>
+    <script type="text/javascript">
+        var phoneScale = parseInt(window.screen.width) / 750;
+        document.write('<meta name="viewport" content="width=750, minimum-scale=' + phoneScale + ', maximum-scale=' +
+            phoneScale + ', user-scalable=no">');
+    </script>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/javascript" src="./lib/jweixin/jweixin-1.2.1.min.js"></script>
+    <!-- <script src="https://api.map.baidu.com/api?v=2.0&ak=IpVPkHoPfMPHuWwvCFFikMsW7YGruKwn"></script> -->
+    <script type="text/javascript" src="./lib/qrcode.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var src = './lib/vconsole/vconsole-2.5.2.min.js';
+            var keyword = 'vConsole';
+            var search = window.location.href;
+            if (search.indexOf(keyword) != -1) {
+                document.write('<sc' + 'ript src="' + src + '"></sc' + 'ript>');
+            }
+        })();
+    </script>
+</body>
+
+</html>
